@@ -1,0 +1,36 @@
+# Zero Trust Advisor Agent — Development Configuration
+app:
+  name: zero-trust-advisor-agent
+  env: development
+  debug: true
+  log_level: DEBUG
+  log_format: console
+
+database:
+  url: postgresql+asyncpg://postgres:postgres@localhost:5432/zero_trust_advisor_agent
+
+redis:
+  url: redis://localhost:6379/0
+
+vector_store:
+  type: opensearch
+  url: https://localhost:9200
+  index: zero_trust_advisor_agent_vectors
+
+llm:
+  default_provider: openai
+  model: gpt-4o-mini
+  temperature: 0.1
+
+token_budget:
+  user_daily: 1000000
+  org_monthly: 50000000
+
+rate_limiting:
+  requests_per_minute: 1000
+
+guardrails:
+  enabled: false
+
+tracing:
+  enabled: false

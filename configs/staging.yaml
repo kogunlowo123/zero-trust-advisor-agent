@@ -1,0 +1,37 @@
+# Zero Trust Advisor Agent — Staging Configuration
+app:
+  name: zero-trust-advisor-agent
+  env: staging
+  debug: false
+  log_level: INFO
+  log_format: json
+
+database:
+  url: ${DATABASE_URL}
+
+redis:
+  url: ${REDIS_URL}
+
+vector_store:
+  type: opensearch
+  url: ${OPENSEARCH_URL}
+  index: zero_trust_advisor_agent_vectors
+
+llm:
+  default_provider: openai
+  model: gpt-4o
+  temperature: 0.1
+
+token_budget:
+  user_daily: 100000
+  org_monthly: 5000000
+
+rate_limiting:
+  requests_per_minute: 300
+
+guardrails:
+  enabled: true
+
+tracing:
+  enabled: true
+  sample_rate: 0.1
