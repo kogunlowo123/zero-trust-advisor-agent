@@ -1,0 +1,29 @@
+"""Protocol ports for dependency injection in the search pipeline."""
+from typing import Any, Protocol
+
+
+class VectorStorePort(Protocol):
+    async def keyword_search(self, query: str, top_k: int = 10, filters: dict | None = None) -> list: ...
+    async def vector_search(self, embedding: list[float], top_k: int = 10, filters: dict | None = None) -> list: ...
+    async def get_by_ids(self, ids: list[str]) -> list: ...
+
+
+class EmbeddingPort(Protocol):
+    async def embed(self, texts: list[str]) -> list[list[float]]: ...
+
+
+class LLMPort(Protocol):
+    async def chat(self, messages: list[dict], **kwargs) -> str: ...
+
+
+class CachePort(Protocol):
+    async def get(self, key: str) -> Any | None: ...
+    async def set(self, key: str, value: Any, ttl_seconds: int = 300) -> None: ...
+
+
+class LiveDataPort(Protocol):
+    async def query(self, query: str, user_token: str) -> list[dict]: ...
+
+
+class StructuredDataPort(Protocol):
+    async def query_sql(self, sql: str) -> list[dict]: ...

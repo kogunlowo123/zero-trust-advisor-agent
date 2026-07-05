@@ -1,0 +1,17 @@
+# Zero Trust Advisor Agent — Blueprint Catalog
+blueprints:
+  - name: rag-naive
+    description: Keyword-only retrieval (pilot)
+    modules: [network, object-store, inference-gateway]
+  - name: rag-hybrid
+    description: Keyword + vector + semantic ranker (production)
+    modules: [network, vectorstore, object-store, inference-gateway]
+  - name: rag-graph
+    description: Entity-relationship graph retrieval
+    modules: [network, vectorstore, object-store, inference-gateway]
+  - name: rag-multimodal
+    description: Text + image + table retrieval
+    modules: [network, vectorstore, object-store, inference-gateway]
+  - name: rag-agentic
+    description: RAG as a tool in multi-agent system
+    modules: [network, vectorstore, object-store, inference-gateway]

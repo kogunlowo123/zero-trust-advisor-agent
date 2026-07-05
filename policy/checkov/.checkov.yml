@@ -1,0 +1,9 @@
+soft-fail: false
+check:
+  - CKV_AWS_79   # Ensure Instance Metadata Service v2
+  - CKV_AWS_145  # Ensure S3 bucket encryption
+  - CKV_AWS_18   # Ensure S3 access logging
+  - CKV_AWS_19   # Ensure S3 bucket has server-side encryption
+  - CKV_K8S_21   # Ensure container runs as non-root
+  - CKV_K8S_28   # Ensure no hostPID
+  - CKV_K8S_22   # Ensure read-only filesystem
