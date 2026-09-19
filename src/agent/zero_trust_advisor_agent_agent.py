@@ -7,7 +7,7 @@ from typing import AsyncIterator, Any, Optional
 from datetime import datetime, timezone
 
 import structlog
-from langchain.schema import HumanMessage, SystemMessage, AIMessage
+from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 from src.config import get_settings
 from src.models.schemas import ChatRequest, ChatResponse, StreamChunk
