@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 888 748" width="888" height="748" role="img" aria-label="zero-trust-advisor-agent architecture">
+<title>zero-trust-advisor-agent architecture</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+<rect width="888" height="748" fill="#ffffff"/>
+<text x="24" y="34" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="600" fill="#0f172a">zero-trust-advisor-agent</text>
+<text x="24" y="56" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#475569">Components under src/. Stack: Python. Generated from the repository layout.</text>
+<rect x="24" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">llm/</text>
+<text x="38" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">7 files</text>
+<text x="38" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="38" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">providers</text>
+<text x="38" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">router.py</text>
+<rect x="312" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">memory/</text>
+<text x="326" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">7 files</text>
+<text x="326" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="326" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">decisions.py</text>
+<text x="326" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">knowledge_graph.py</text>
+<text x="326" y="198" font-family="Consolas,monospace" font-size="12" fill="#334155">lexical.py</text>
+<rect x="600" y="80" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="104" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">agent/</text>
+<text x="614" y="126" font-family="Consolas,monospace" font-size="12" fill="#334155">6 files</text>
+<text x="614" y="144" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="614" y="162" font-family="Consolas,monospace" font-size="12" fill="#334155">orchestrator</text>
+<text x="614" y="180" font-family="Consolas,monospace" font-size="12" fill="#334155">prompts.py</text>
+<text x="614" y="198" font-family="Consolas,monospace" font-size="12" fill="#334155">tools.py</text>
+<rect x="24" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">gateway/</text>
+<text x="38" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">6 files</text>
+<text x="38" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="38" y="324" font-family="Consolas,monospace" font-size="12" fill="#334155">audit_trail.py</text>
+<text x="38" y="342" font-family="Consolas,monospace" font-size="12" fill="#334155">guardrails.py</text>
+<text x="38" y="360" font-family="Consolas,monospace" font-size="12" fill="#334155">middleware.py</text>
+<rect x="312" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">api/</text>
+<text x="326" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">5 files</text>
+<text x="326" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="326" y="324" font-family="Consolas,monospace" font-size="12" fill="#334155">main.py</text>
+<text x="326" y="342" font-family="Consolas,monospace" font-size="12" fill="#334155">routes</text>
+<rect x="600" y="242" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="266" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">a2a/</text>
+<text x="614" y="288" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="614" y="306" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="614" y="324" font-family="Consolas,monospace" font-size="12" fill="#334155">handler.py</text>
+<rect x="24" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">auth/</text>
+<text x="38" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="38" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="38" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">service.py</text>
+<rect x="312" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">config/</text>
+<text x="326" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="326" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="326" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">settings.py</text>
+<rect x="600" y="404" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">connectors/</text>
+<text x="614" y="450" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="614" y="468" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="614" y="486" font-family="Consolas,monospace" font-size="12" fill="#334155">domain_connectors.py</text>
+<rect x="24" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="38" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">data/</text>
+<text x="38" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="38" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="38" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">lanes.py</text>
+<rect x="312" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="326" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">mcp/</text>
+<text x="326" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="326" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="326" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">server.py</text>
+<rect x="600" y="566" width="270" height="144" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="614" y="590" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600" fill="#0f172a">models/</text>
+<text x="614" y="612" font-family="Consolas,monospace" font-size="12" fill="#334155">2 files</text>
+<text x="614" y="630" font-family="Consolas,monospace" font-size="12" fill="#334155">__init__.py</text>
+<text x="614" y="648" font-family="Consolas,monospace" font-size="12" fill="#334155">schemas.py</text>
+</svg>
